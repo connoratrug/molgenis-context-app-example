@@ -1,29 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <NavBar v-if="showNav" :molgenis-menu="molgenisMenu"/>
+    <div class="container">
+      <HelloWorld/>
+    </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+import api from '@molgenis/molgenis-api-client'
+import NavBar from '@molgenis/molgenis-ui-context/src/components/NavBar'
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld, NavBar
+  },
+  data () {
+    return {
+      molgenisMenu: {},
+      showNav: false
+    }
+  },
+  mounted () {
+    api.get('/plugin/app-ui-context').then((context) => {
+      this.molgenisMenu = context
+      this.showNav = true
+    })
   }
 })
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
