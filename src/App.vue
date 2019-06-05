@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar v-if="isContextLoaded" :molgenis-menu="molgenisMenu"/>
+    <HeaderComponent v-if="isContextLoaded" :molgenis-menu="molgenisMenu"/>
     <div class="container">
       <HelloWorld/>
     </div>
@@ -11,14 +11,14 @@
 <script>
 import Vue from 'vue'
 import api from '@molgenis/molgenis-api-client'
-import NavBar from '@molgenis/molgenis-ui-context/src/components/NavBar'
+import HeaderComponent from '@molgenis/molgenis-ui-context/src/components/HeaderComponent'
 import FooterComponent from '@molgenis/molgenis-ui-context/src/components/FooterComponent'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default Vue.extend({
   name: 'app',
   components: {
-    HelloWorld, NavBar, FooterComponent
+    HelloWorld, HeaderComponent, FooterComponent
   },
   data () {
     return {
@@ -28,7 +28,7 @@ export default Vue.extend({
     }
   },
   mounted () {
-    api.get('/plugin/app-ui-context').then((context) => {
+    api.get('/app-ui-context').then((context) => {
       this.molgenisMenu = context
       this.footerData = context
       this.isContextLoaded = true

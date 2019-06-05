@@ -9,12 +9,20 @@
   },
   "vue": {
     "devServer": {
-      "proxy": "http://localhost:8080"
+      "proxy": {
+        "/": {
+          "target": "https://latest.test.molgenis.org",
+          "auth": "[username]:[pw]",
+          "changeOrigin": true,
+          "secure": false,
+          "ws": false
+        }
+      }
     }
   },
   "dependencies": {
-    "@molgenis/molgenis-api-client": "^3.1.0",
-    "@molgenis/molgenis-ui-context": "^0.5.0",
+    "@molgenis/molgenis-api-client": "3.1.0",
+    "@molgenis/molgenis-ui-context": "^1.1.2",
     "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",

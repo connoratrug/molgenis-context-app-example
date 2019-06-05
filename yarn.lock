@@ -675,7 +675,7 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@molgenis/molgenis-api-client@^3.1.0":
+"@molgenis/molgenis-api-client@3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@molgenis/molgenis-api-client/-/molgenis-api-client-3.1.0.tgz#04b2ae848810082cceef5b1a62675b22181a5af2"
   integrity sha512-wkAdGYqorr5/bYyAg9hk7r3oV9G8j4N/H3kSgz6fzj2G1JBIPhCYvx0fAZjPxS3uxT921Z9o+OWmjQIJIVthDw==
@@ -685,10 +685,20 @@
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.4"
 
-"@molgenis/molgenis-ui-context@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-ui-context/-/molgenis-ui-context-0.5.0.tgz#3c948f44a95ca2e824f0c798053ad0500bf79ac3"
-  integrity sha512-xqrL6DqYaBYAD6908OHWc5tnDC5PAT92WzjgX2DM/5XLYVJWqs8oCP5C2jm0FEswEKweMfiXD9fH4KUJZQ+nug==
+"@molgenis/molgenis-api-client@^3.1.0":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-api-client/-/molgenis-api-client-3.1.1.tgz#87314000b8ba0fcd407e17f9da1e32f2851ade0c"
+  integrity sha512-YTy6CmrxtYN582SofgIqGIXsUxJ6Nhb2d2Ib3/+lkeTWDlyAJ+w1MZReO9hev+50rVRuRYFYAFXWw4QbJ50ijg==
+  dependencies:
+    babel-runtime "^6.11.6"
+    form-data "^2.3.1"
+    isomorphic-fetch "^2.2.1"
+    lodash "^4.17.4"
+
+"@molgenis/molgenis-ui-context@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-ui-context/-/molgenis-ui-context-1.1.2.tgz#2c1b285733edd335e41cf32e5cd21a58b5957ebe"
+  integrity sha512-Z3R5oRfTzx0tzNKDAfu2jU+cTZGYjFu7kqxXpc1mtlWi2se6jWAu0/GaAi1LQLyaLOD5gzSWWc3V0x7QZbww/A==
   dependencies:
     "@molgenis/molgenis-api-client" "^3.1.0"
 
@@ -2273,7 +2283,12 @@ copy-webpack-plugin@^4.6.0:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
-core-js@^2.4.0, core-js@^2.5.7, core-js@^2.6.3:
+core-js@^2.4.0:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
+  integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
+
+core-js@^2.5.7, core-js@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.3.tgz#4b70938bdffdaf64931e66e2db158f0892289c49"
   integrity sha512-l00tmFFZOBHtYhN4Cz7k32VM7vTn3rE2ANjQDxdEN6zmXZ/xq1jQuutnmHvMG1ZJ7xd72+TA5YpUK8wz3rWsfQ==
