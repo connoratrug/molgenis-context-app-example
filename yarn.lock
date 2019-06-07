@@ -675,22 +675,12 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@molgenis/molgenis-api-client@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-api-client/-/molgenis-api-client-3.1.0.tgz#04b2ae848810082cceef5b1a62675b22181a5af2"
-  integrity sha512-wkAdGYqorr5/bYyAg9hk7r3oV9G8j4N/H3kSgz6fzj2G1JBIPhCYvx0fAZjPxS3uxT921Z9o+OWmjQIJIVthDw==
+"@molgenis/molgenis-api-client@^3.1.0", "@molgenis/molgenis-api-client@^3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-api-client/-/molgenis-api-client-3.1.3.tgz#a48a103954ede1a077e0c51bca4012c04dd9ce37"
+  integrity sha512-6F8kAeLwP4XDW5d8sbRwdIRXdXEHlFKr4xYh1a1doTmq1SToLUUIPDtUeZqH+RRwOrVKaEndvcOzBO5YyDqDsQ==
   dependencies:
-    babel-runtime "^6.11.6"
-    form-data "^2.3.1"
-    isomorphic-fetch "^2.2.1"
-    lodash "^4.17.4"
-
-"@molgenis/molgenis-api-client@^3.1.0":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@molgenis/molgenis-api-client/-/molgenis-api-client-3.1.1.tgz#87314000b8ba0fcd407e17f9da1e32f2851ade0c"
-  integrity sha512-YTy6CmrxtYN582SofgIqGIXsUxJ6Nhb2d2Ib3/+lkeTWDlyAJ+w1MZReO9hev+50rVRuRYFYAFXWw4QbJ50ijg==
-  dependencies:
-    babel-runtime "^6.11.6"
+    babel-runtime "^6.26.0"
     form-data "^2.3.1"
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.4"
@@ -1507,7 +1497,7 @@ babel-plugin-dynamic-import-node@^2.2.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-runtime@^6.11.6:
+babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
