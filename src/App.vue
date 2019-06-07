@@ -1,9 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="mg-page">
     <HeaderComponent v-if="isContextLoaded" :molgenis-menu="molgenisMenu"/>
-    <div class="container">
-      <HelloWorld/>
-    </div>
+    <main class="mg-page-content">
+      <div class="container">
+        <HelloWorld/>
+      </div>
+    </main>
     <FooterComponent v-if="isContextLoaded" :molgenisFooter="footerData"/>
   </div>
 </template>
